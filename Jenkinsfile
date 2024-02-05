@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage("Clear Workspace"){
             steps{
-                cleanWS()
+                cleanWs()
             }
         }
         stage("FlyWay Info"){
