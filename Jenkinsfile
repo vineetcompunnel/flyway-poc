@@ -9,6 +9,14 @@ pipeline{
                 cleanWs()
             }
         }
+        stage('SCM') {
+			steps {
+			    script{
+			        git branch: 'development', changelog: false, url: 'git@github.com:vineetcompunnel/flyway-poc.git'
+
+			    }
+			}
+		}
         stage("FlyWay Info"){
             steps{
                 sh "$FLYWAY/flyway info"
