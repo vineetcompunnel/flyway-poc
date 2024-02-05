@@ -22,5 +22,10 @@ pipeline{
                 sh "$FLYWAY/flyway info"
             }
         }
+        stage("FlyWay Migrate"){
+            steps{
+                sh "$FLYWAY/flyway migrate"
+            }
+        }
     }
 }
