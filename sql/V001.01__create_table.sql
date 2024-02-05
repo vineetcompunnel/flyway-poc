@@ -6,3 +6,5 @@ CREATE TABLE SampleTable (
     Email NVARCHAR(100),
     CreatedDate DATETIME
 );
+
+select * from SampleTable
