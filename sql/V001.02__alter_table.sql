@@ -5,4 +5,4 @@ ADD PhoneNumber NVARCHAR(20);
 
 -- V2__add_column.sql (Fixed version)
 ALTER TABLE my_table
-ADD COLUMN new_column INT;
+ADD new_column INT;
