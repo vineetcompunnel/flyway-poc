@@ -27,7 +27,7 @@ pipeline{
                 sh "$FLYWAY/flyway migrate"
             }
         }
-        stage("FlyWay Info"){
+        stage("FlyWay Info after apply"){
             steps{
                 sh "$FLYWAY/flyway info"
             }
